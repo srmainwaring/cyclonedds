@@ -45,7 +45,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
   set(ENABLE_SHM "OFF" CACHE STRING "Disable shared memory support")
   message(STATUS "Warning: iceoryx binding for Windows currently not supported")
 else()
-  set(ENABLE_SHM "AUTO" CACHE STRING "Enable shared memory support")
+  set(ENABLE_SHM "OFF" CACHE STRING "Enable shared memory support")
 endif()
 
 set_property(CACHE ENABLE_SHM PROPERTY STRINGS ON OFF AUTO)
